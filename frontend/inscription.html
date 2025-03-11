@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription | InternMatch</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="InternMatch Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="offres.html">Offres</a></li>
+                <li><a href="candidatures.html">Candidatures</a></li>
+                <li><a href="entreprises.html">Entreprises</a></li>
+                <li class="icon"><a href="connexion.html"><img src="images/icon.png" alt="Profil"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="register-container">
+        <div class="register-box">
+            <h2>Inscrivez-vous !</h2>
+            
+            <div class="login-tabs">
+                <a href="connexion.html">Se connecter</a>
+                <a href="inscription.html" class="active">S'inscrire</a>
+            </div>
+
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+                </div>
+
+                <button type="submit" class="btn-register">S'inscrire</button>
+            </form>
+            <p class="or-text">ou</p>
+
+            <div class="social-login">
+                <button class="linkedin-btn">
+                    <img src="images/linkedin.png" alt="LinkedIn"> Se connecter avec LinkedIn
+                </button>
+                <button class="google-btn">
+                    <img src="images/google.png" alt="Google"> Se connecter avec Google
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="InternMatch">
+            </div>
+    
+            <div class="footer-links">
+                <h3>À propos</h3>
+                <ul>
+                    <li><a href="#">Qui sommes-nous ?</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-apps">
+                <h3>Retrouvez nous sur</h3>
+                <img src="images/app.png" alt="Applications">
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 InternMatch - Tous droits réservés</p>
+            <div class="legal-links">
+                <a href="#">Mentions légales</a> | 
+                <a href="#">CGU</a> | 
+                <a href="#">Politique de confidentialité</a> | 
+                <a href="#">Gestion des cookies</a>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>

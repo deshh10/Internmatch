@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offres de Stage</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="InternMatch Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="offres.html">Offres</a></li>
+                <li><a href="candidatures.html">Candidatures</a></li>
+                <li><a href="entreprises.html">Entreprises</a></li>
+                <li class="icon"><a href="connexion.html"><img src="images/icon.png" alt="Profil"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="search-section">
+                <img src="images/noir.png" class="background-image" alt="Background">
+                <div class="search-container">
+                    <input type="text" id="search-job" placeholder="Métier, entreprise...">
+                    <input type="text" id="search-location" placeholder="Ville, département...">
+                    <button id="search-btn"><img src="images/search.png" alt="Rechercher"></button>
+                </div>
+                <div class="filter-container">
+                    <span>Filtres</span>
+                    <select class="distance" id="distance">
+                        <option value="">Distance</option>
+                        <option value="5">5 km</option>
+                        <option value="10">10 km</option>
+                        <option value="15">15 km</option>
+                        <option value="20">20 km</option>
+                        <option value="25">25 km</option>
+                        <option value="30">30 km</option>
+                        <option value="35">35 km</option>
+                        <option value="40">40 km</option>
+                        <option value="45">45 km</option>
+                        <option value="50">50 km</option>
+                    </select>
+                    <select name="Durée" id="durée">
+                        <option value="">Durée</option>
+                        <option value="1">1 mois</option>
+                        <option value="2">2 mois</option>
+                        <option value="3">3 mois</option>
+                        <option value="4">4 mois</option>
+                        <option value="5">5 mois</option>
+                        <option value="6">6 mois</option>
+                        <option value="7">7 mois</option>
+                        <option value="8">8 mois</option>
+                        <option value="9">9 mois</option>
+                        <option value="10">10 mois</option>
+                        <option value="11">11 mois</option>
+                        <option value="12">12 mois</option>
+                    </select>
+                    <select name="Télétravail" id="télétravail">
+                        <option value="">Télétravail</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                    <select name="Fonctions" id="fonctions">
+                        <option value="">Fonctions</option>
+                        <option value="Développeur">Développeur</option>
+                        <option value="Designer">Designer</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Commercial">Commercial</option>
+                        <option value="RH">RH</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Juridique">Juridique</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+
+                    <select name="Secteur d'activité" id="secteur">
+                        <option value="">Secteur d'activité</option>
+                        <option value="Informatique">Informatique</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Communication">Communication</option>
+                        <option value="RH">RH</option>
+                        <option value="Juridique">Juridique</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
+
+    
+            </section>
+        </div>
+    
+        <section class="offers-list">
+            <h2>5475 offres</h2>
+            <div id="offers-container" class="offers-container"></div>
+            <div class="offer-card">
+                <div class="offer-info">
+                    <h3>Développeur Web H/F</h3>
+                    <p><strong>Entreprise:</strong> Web4All</p>
+                    <p>Paris - 75 Stage</p>
+                    <p>Télétravail Partiel</p>
+                    <p class="date">Il y a 2 jours</p>
+                </div>
+                <div class="offer-actions">
+                    <button class="offer-btn">Voir l'offre</button>
+                    <span class="fav-icon"><i class="far fa-heart"></i></span>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer votre entreprise - InternMatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">INTERNMATCH</div>
+        <div class="nav-links">
+            <a href="#">Accueil</a>
+            <a href="#">Entreprises</a>
+            <a href="#">Candidatures</a>
+        </div>
+        <div class="user-icon">👤</div>
+    </div>
+
+    <div class="main-container">
+        <div class="form-container">
+            <h2>Créer votre entreprise</h2>
+
+            <form>
+                <div class="input-group">
+                    <label for="nom">Nom de l'entreprise</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email de contact</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="telephone">Téléphone</label>
+                    <input type="tel" id="telephone" name="telephone" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="adresse">Adresse</label>
+                    <input type="text" id="adresse" name="adresse" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="domaine">Domaine d'activité</label>
+                    <input type="text" id="domaine" name="domaine" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="stagiaires">Nombre de stagiaires acceptés</label>
+                    <input type="number" id="stagiaires" name="stagiaires" min="1" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">J'accepte les <a href="#">conditions générales</a></label>
+                </div>
+
+                <button type="submit">Créer l'entreprise</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><a href="#">Mentions légales</a> | <a href="#">CGU</a> | <a href="#">Politique de confidentialité</a></p>
+    </div>
+
+</body>
+</html>

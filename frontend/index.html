@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternMatch</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="InternMatch Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="offres.html">Offres</a></li>
+                <li><a href="candidatures.html">Candidatures</a></li>
+                <li><a href="entreprises.html">Entreprises</a></li>
+                <li class="icon"><a href="connexion.html"><img src="images/icon.png" alt="Profil"></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>TROUVE TON STAGE <br> EN <span>ENTREPRISE</span> !</h1>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Intitulé de poste, mot-clé ou entreprise">
+                <button id="search-btn"><img src="images/search.png" alt="Rechercher"></button>
+            </div>
+            
+
+            <div class="filters">
+                <select id="location-filter">
+                    <option value="">Localisation</option>
+                    <option value="Auvergne-Rhône-Alpes">Auvergne-Rhône-Alpes</option>
+                    <option value="Bourgogne-Franche-Comté">Bourgogne-Franche-Comté</option>
+                    <option value="Bretagne">Bretagne</option>
+                    <option value="Bretagne">Bretagne</option>
+                    <option value="Centre-Val de Loire">Centre-Val de Loire</option>
+                    <option value="Corse">Corse</option>
+                    <option value="Grand Est">Grand Est</option>
+                    <option value="Hauts-de-France">Hauts-de-France</option>
+                    <option value="Île-de-France">Île-de-France</option>
+                    <option value="Normandie">Normandie</option>
+                    <option value="Nouvelle-Aquitaine">Nouvelle-Aquitaine</option>
+                    <option value="Occitanie">Occitanie</option>
+                    <option value="Pays de la Loire">Pays de la Loire</option>
+                    <option value="Provence-Alpes-Côte d'Azur">Provence-Alpes-Côte d'Azur</option>
+                    <option value="Guadeloupe">Guadeloupe</option>
+                    <option value="Martinique">Martinique</option>
+                    <option value="Guyane">Guyane</option>
+                    <option value="La Réunion">La Réunion</option>
+                    <option value="Mayotte">Mayotte</option>  
+                </select>
+            
+                <select id="duration-filter">
+                    <option value="">Durée</option>
+                    <option value="Moins d'1 mois">Moins d'1 mois</option>
+                    <option value="1 à 3 mois">1 à 3 mois</option>
+                    <option value="3 à 6 mois">3 à 6 mois</option>
+                    <option value="6 mois à 1 an">6 mois à 1 an</option>
+                    <option value="1 an et plus">1 an et plus</option>
+                </select>
+            
+                <select id="competence-filter">
+                    <option value="">Fonctions/option>
+                    <option value="Achat - Logistique">Achat - Logistique</option>
+                    <option value="Administration">Administration</option>
+                    <option value="BTP - Bureaux d'études">BTP - Bureaux d'études</option>
+                    <option value="Commerce">Commerce</option>
+                    <option value="Informatique">Informatique</option>
+                    <option value="Marketing - Communication">Marketing - Communication</option>
+                    <option value="Ressources Humaines">Ressources Humaines</option>
+                    <option value="Santé - Social">Santé - Social</option>
+                    <option value="Tourisme - Hôtellerie">Tourisme - Hôtellerie</option>
+                    <option value="Transport - Logistique">Transport - Logistique</option>
+            
+                
+                </select>
+            
+            </div>
+            
+        </section>
+
+        <section class="latest-offers">
+            <h2>Dernières Offres de Stage</h2>
+                <div id="latest-offers-container" class="offers-container">
+                </div>
+        </section>
+        
+
+        <section class="companies">
+            <h2>Découvrez les entreprises</h2>
+                <div class="company-logos">
+                    <img src="images/cesi.png" alt="CESI">
+                    <img src="images/safran.png" alt="Safran">
+                    <img src="images/bnp.png" alt="BNP Paribas">
+                    <img src="images/thales.png" alt="Thales">
+                    <img src="images/suez.png" alt="Suez">
+                    <img src="images/sfr.png" alt="SFR">
+                    <img src="images/orange.png" alt="Orange">
+                    <img src="images/loreal.png" alt="L'Oréal">
+                    <img src="images/amazon.png" alt="Amazon">
+                    <img src="images/apple.png" alt="Apple">
+                    <img src="images/total.png" alt="TotalEnergies">
+                    <img src="images/lvmh.png" alt="LVMH">
+                    <img src="images/microsoft.png" alt="Microsoft">
+                    <img src="images/carrefour.png" alt="Carrefour">
+                    <img src="images/dassault.png" alt="Dassault Systèmes">
+                    <img src="images/bouygues.png" alt="Bouygues">
+                    <img src="images/bpce.png" alt="Groupe BPCE">
+                    <img src="images/engie.png" alt="Engie">
+                </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="InternMatch">
+                </div>
+                <div class="footer-links">
+                    <h3>À propos</h3>
+                    <ul>
+                        <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+                        <li><a href="mentionslegales.html">Mentions légales</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-apps">
+                    <h3>Retrouvez nous sur</h3>
+                    <img src="images/app.png" alt="Applications">
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 InternMatch - Tous droits réservés</p>
+                <div class="legal-links">
+                    <a href="#">Mentions légales</a> | 
+                    <a href="#">CGU</a> | 
+                    <a href="#">Politique de confidentialité</a> | 
+                    <a href="#">Gestion des cookies</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
+
+
